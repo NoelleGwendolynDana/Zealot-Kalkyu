@@ -1,4 +1,5 @@
 # Zealot-Kalkyu
+# <<<<<<< GUI
 # Basic calculator 
 
 
@@ -41,3 +42,18 @@ class Kalkyu:
         self.answer_label = tk.Label(self.display_frame, text=self.answer, anchor = tk.E, bg = "#B4D6C1", fg = "#000000", padx = 10, font = ("Verdana", 25, 'bold'))
         self.answer_label.pack(expand=True, fill='both')
         return self.equation_label, self.answer_label
+
+    def add_to_expression(self, value):
+            self.equation += str(value)
+            self.update_equation_label()
+
+    def append_operator(self, operator):
+            self.equation += str(operator)
+            self.update_equation_label()
+
+    def create_special_buttons(self):
+            self.create_clear_button()
+            self.create_delete_button()
+            self.create_equal_button()
+            self.create_ans_button()
+# >>>>>>> main
