@@ -40,5 +40,4 @@ class Kalkyu:
 
         self.answer_label = tk.Label(self.display_frame, text=self.answer, anchor = tk.E, bg = "#B4D6C1", fg = "#000000", padx = 10, font = ("Verdana", 25, 'bold'))
         self.answer_label.pack(expand=True, fill='both')
-        
         return self.equation_label, self.answer_label
