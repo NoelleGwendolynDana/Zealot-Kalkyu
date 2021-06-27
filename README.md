@@ -16,3 +16,16 @@ def create_special_buttons(self):
         self.create_delete_button()
         self.create_equal_button()
         self.create_ans_button()
+
+
+def clear(self):
+        self.equation = ""
+        self.answer = ""
+        self.update_equation_label()
+        self.update_answer_label()
+        
+ def delete(self):
+        self.list1 = []
+        self.list1[:0] = self.equation
+        self.equation = "".join(self.list1[:-1])
+        self.update_equation_label()
